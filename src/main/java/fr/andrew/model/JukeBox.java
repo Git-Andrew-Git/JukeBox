@@ -5,6 +5,12 @@ public class JukeBox {
     private AudioPlayer audioPlayer;
     private Speaker speaker;
 
+    public JukeBox() {
+        this.amplifier = new Amplifier();
+        this.audioPlayer = new AudioPlayer();
+        this.speaker = new Speaker();
+    }
+
     public void playMusic(){
         amplifier.turnOn();
         amplifier.setVolume(5);
